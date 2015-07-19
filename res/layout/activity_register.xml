@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:weightSum="3" >
+    <ScrollView 
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/RegisterLiear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/RegisterUserTel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/RegisterUserId"
+            android:textSize="@dimen/small" />
+
+        <EditText
+            android:id="@+id/RegisterUserName"
+            android:layout_width="match_parent"
+            android:hint="@string/RegisterUserName"
+            android:textSize="@dimen/small"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/RegisterPassWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/RegisterPassWord"
+            android:inputType="textPassword"
+            android:textSize="@dimen/small" />
+
+        <EditText
+            android:id="@+id/ConfirmPassWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ConfirmPassWord"
+            android:inputType="textPassword"
+            android:textSize="@dimen/small" />
+
+        <EditText
+            android:id="@+id/RegisterUserPostcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/RegisterUserPostcode"
+            android:textSize="@dimen/small" />
+
+        <EditText
+            android:id="@+id/RegisterUserAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/RegisterUserAddress"
+            android:textSize="@dimen/small" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/RegisterButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Register"
+                android:textSize="@dimen/small" />
+
+            <Button
+                android:id="@+id/BackToLog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Back"
+                android:textSize="@dimen/small" />
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

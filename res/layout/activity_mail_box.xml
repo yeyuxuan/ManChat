@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:weightSum="4"
+    tools:ignore="MergeRootFrame" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#9666f9"
+        android:orientation="vertical"
+        android:weightSum="3"
+        tools:context="com.Activity.MenuActivity"
+        tools:ignore="MergeRootFrame" >
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1.01"
+            android:background="@drawable/selector_back_to_menu" />
+
+        <ImageButton
+            android:id="@+id/sendReceiveBox"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1.03"
+            android:background="@drawable/selector_sr_box" />
+
+        <ImageButton
+            android:id="@+id/draftbox"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_draft_box" />
+    </LinearLayout>
+
+</LinearLayout>
